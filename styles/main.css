@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -20;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    animation: scale 25s;
+    z-index: -21;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* NAVIGATION */
+
+.nav {
+    width: 90%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem auto;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.brand-name {
+    font-size: 2.2rem;
+    font-family: 'Merienda One', cursive;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .4s ease-in;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* BANNER */
+
+.banner {
+    margin: 11rem auto 0 5.2rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-title {
+    font-size: 7rem;
+    margin-bottom: .7rem;
+    font-weight: 400;
+    line-height: 7rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: bannerStart 1s 0.5s forwards;
+}
+
+.banner p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 50%;
+    margin-bottom: 1.2rem;
+    line-height: 2.7rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: bannerStart 1s 0.7s forwards;
+}
+
+/* Designing Explore Button */
+
+.explore-btn {
+    width: 15.5rem;
+    height: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    background-color: rgba(244, 67, 54, .7);
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: bannerStart 1s 0.9s forwards;
+    transition: background-color .3s ease-in;
+    transition: width .3s ease-in;
+}
+
+.explore-btn:hover {
+    background-color: rgba(244, 67, 54, .8);
+    width: 17rem;
+}
+
+@keyframes bannerStart {
+    0% {
+        transform: translateY(40rem) rotateY(-20deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* MAIN */
+
+/* BASIC: POPULAR PLACES AND ABOUT US STYLE*/
+
+main {
+    width: 100%;
+    color: #222831;
+}
+
+.popular-places{    
+    padding: 3rem 0 .2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.popular-places h2,
+.about-us h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.underline {
+    width: 11.5rem;
+    height: .2rem;
+    background-color: #222831;
+    margin: 1.5rem auto;
+}
+
+/*POPULAR PLACES CONTENT */
+
+.place-article {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto 5.3rem;
+}
+
+.place-content {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.place-content h3 {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.place-content p {
+    width: 90%;
+    font-size: 1.26rem;
+    text-align: justify;
+}
+
+.place-content .content-para {
+    margin-left: 3.3rem;
+}
+
+.popular-place-img {
+    width: 45%;
+    height: 50vh;
+    border-radius: 2%;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform .5s ease-in;
+}
+
+.popular-place-img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+/* ABOUT US */
+
+.about-us {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #222831;
+    height: 105vh;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    color: #fff;
+}
+
+.about-us .underline {
+    background-color: #fff;
+    width: 7rem;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    width: 80%;     
+    margin: 3rem auto 0;    
+}
+
+.about{
+    width: 100%;
+}
+
+.about p{
+    font-size: 1.3rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about .about-question{
+    font-size: 1.4rem;
+    margin: 1rem auto 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.about .explore-btn{
+    animation: unset;
+    opacity: 1;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #222831;
+}
+
+.social-media {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-media-icons a {
+    text-align: center;
+}
+
+.svg {
+    width: 20%;
+    transition: opacity .3s ease-in;
+}
+
+.svg:hover{
+    opacity: 0.6;
+}
+
+.copyright {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.copyright a, .copyright p {    
+    color: #fff;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-bottom .3s ease-in;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* RESPONSIVENESS */
