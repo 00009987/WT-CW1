@@ -330,3 +330,534 @@ footer {
 
 
 /* RESPONSIVENESS */
+
+@media (max-width: 1500px) {
+    /* Header */
+
+    .banner {
+        margin: 12rem auto 0 4.2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    /* Popular places */
+    .place-article {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    /* Header */
+    .header {
+        height: 105vh;
+    }
+
+    .banner {
+        margin: 9rem auto 0 4.2rem;
+    }
+
+    .banner-title {
+        font-size: 6.2rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+        width: 55%;
+    }
+
+    .explore-btn {
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+    }
+
+    /* Popular places */
+    .place-content h3 {
+        font-size: 1.9rem;
+    }
+
+    .place-content p {
+        font-size: 1.19rem;
+    }
+
+
+    .popular-place-img {
+        height: 45vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.15);
+    }
+
+    /* About Us */
+    .about-us {
+        height: 140vh;
+    }
+
+    .about .about-question {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    /* Header */
+    .header {
+        height: 100vh;
+    }
+
+    .nav {
+        width: 97%;
+        margin: .5rem auto;
+    }
+
+    .banner {
+        margin: 5.5rem auto 0 4.2rem;
+    }
+
+    .banner-title {
+        font-size: 5.5rem;
+    }
+
+    .explore-btn {
+        width: 12.5rem;
+    }
+
+    /* Popular places */
+    .place-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .place-content p {
+        font-size: 1.1rem;
+    }
+
+
+    .popular-place-img {
+        width: 47%;
+        height: 40vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.1);
+    }
+
+    /* About Us */
+    .about-us {
+        height: 140vh;
+    }
+
+    .about-container {
+        width: 90%;
+        margin: 1.8rem auto 0;
+    }
+
+    /* Footer Content */
+
+    .social-media-icons {
+        margin-bottom: 2rem;
+    }
+
+    .svg {
+        width: 20%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    /* Header */
+    .header {
+        height: 90vh;
+    }
+
+    .banner {
+        margin: 4rem auto 0 4.2rem;
+    }
+
+    .banner-title {
+        font-size: 5rem;
+    }
+
+    .banner p {
+        font-size: 1.3rem;
+        width: 55%;
+    }
+
+    .explore-btn {
+        width: 11rem;
+        font-size: 1.2rem;
+    }
+
+    .explore-btn:hover {
+        width: 13rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 3.7rem;
+    }
+
+    .underline {
+        width: 18rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-article {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place-content {
+        width: 100%;
+    }
+
+    .place-content h3 {
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .place-content p {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .order-change h3 {
+        order: 1;
+    }
+
+    .order-change p {
+        order: 2;
+    }
+
+    .order-change .popular-place-img {
+        order: 3;
+    }
+
+    .place-content .content-para {
+        margin-left: 0;
+    }
+
+    .popular-place-img {
+        margin-top: 2rem;
+        width: 99%;
+        height: 75vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.05);
+    }
+
+    /* About Us */
+    .about-us {
+        height: 150vh;
+    }
+
+    .about-us .underline {
+        background-color: #fff;
+        width: 9rem;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about .explore-btn {
+        width: 15rem;
+        font-size: 1.4rem;
+        transition: width .3s ease-in;
+    }
+
+    .about .explore-btn:hover {
+        width: 16.5rem;
+    }
+
+    .about .about-question {
+        font-size: 1.5rem;
+    }
+
+    /* Footer Content */
+
+    .svg {
+        width: 22%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+        height: 59vh;
+    }
+
+
+    /* Navigation */
+
+    .nav {
+        width: 88%;
+        padding-top: 1.2rem;
+    }
+
+    .nav-items {
+        position: absolute;
+        right: 0;
+        top: 9vh;
+        width: 100%;
+        height: 50vh;
+        background-color: rgba(0, 0, 0, .9);
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+    }
+
+    .nav-items .nav-link {
+        opacity: 0;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .burger-nav {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Banner */
+
+    .banner {
+        margin: 3rem auto 0 2rem;
+    }
+
+    .banner-title {
+        font-size: 4rem;
+        /* margin-bottom: .7rem;         */
+        line-height: 4rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .banner p {
+        font-size: 1.3rem;
+        width: 70%;
+        margin-bottom: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    /* Designing Explore Button */
+
+    .explore-btn {
+        width: 11rem;
+        height: 3.3rem;
+        font-size: 1.25rem;
+    }
+
+    .explore-btn:hover {
+        width: 12.4rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 2.8rem;
+    }
+
+    .underline {
+        width: 11rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .place-content p {
+        /* width: 90%; */
+        font-size: 1.1rem;
+    }
+
+    .popular-place-img {
+        width: 99%;
+        height: 50vh;
+    }
+    
+    /* About us */
+    .about-us {        
+        height: 135vh;        
+    }
+        
+    .about-us .underline {        
+        width: 7rem;
+    }    
+    
+    .about p {
+        font-size: 1.2rem;       
+    }
+    
+    .about .about-question {
+        font-size: 1.35rem;    
+    }
+
+    .about .explore-btn {
+        width: 16rem;     
+        height: 4rem;
+        font-size: 1.7rem;           
+    }
+    .about .explore-btn:hover {
+        width: 17.5rem;
+    }
+
+    /* Footer Content */    
+    
+    .svg {
+        width: 30%;        
+    }
+}
+
+@media (max-width: 550px){
+    /* Header */
+    .header {
+        height: 75vh;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;        
+    }
+
+
+    /* Navigation */ 
+
+    .nav-items {        
+        top: 9vh;        
+        height: 66vh;        
+    } 
+
+    /* Banner */
+
+    .banner {
+        margin: 3.5rem auto 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-title {
+        text-align: center;        
+        font-size: 5rem;        
+        line-height: 5rem;
+        
+    }
+
+    .banner p {
+        font-size: 1.4rem;
+        width: 80%;
+        text-align: center;        
+    }
+
+    /* Designing Explore Button */
+
+    .explore-btn {
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .explore-btn:hover {
+        width: 14rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+
+    .underline {
+        width: 11rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-content h3 {
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
+    
+    .popular-place-img {
+        width: 99%;
+        height: 44vh;
+    }
+    
+    /* About us */
+    /* .about-us {        
+        height: 135vh;        
+    } */
+        
+    .about-us .underline {        
+        width: 6rem;
+    }    
+    
+    .about p {
+        font-size: 1.15rem;       
+    }
+    
+    .about .about-question {
+        font-size: 1.25rem;    
+    }
+
+    .about .explore-btn {
+        width: 14.5rem;     
+        height: 3.7rem;
+        font-size: 1.4rem;           
+    }
+    .about .explore-btn:hover {
+        width: 15.5rem;
+    }
+
+    /* Footer Content */    
+    
+    .svg {
+        width: 40%;        
+    }   
+
+    .copyright {
+        width: 90%;        
+    }
+    
+    .copyright a,
+    .copyright p {        
+        font-size: .7rem;        
+    }
+}
