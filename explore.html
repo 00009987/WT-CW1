@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/explore.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!-- header background image -->
+        <div class="img-wrapper">
+            <img src="images/explore/japanese-woman.jpg" alt="japanese woman">
+        </div>
+
+        <!-- navigation bar -->
+        <nav class="nav">
+            <a class="brand-name" href="index.html">Voyager</a>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#" class="nav-link active">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Things to do</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Plan Your Trip</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <section class="burger-nav">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </section>
+        </nav>
+
+        <!-- Question content -->
+        <section class="question-container">
+            <h2> What do you want to explore?</h2>
+
+            <section class="option-container">
+                <button class="option"><a href="#history">History</a></button>
+
+                <button class="option"><a href="#">Art</a></button>
+
+                <button class="option"><a href="#">Nature</a></button>
+
+                <button class="option"><a href="#">Culture</a></button>
+            </section>
+        </section>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-container">
+
+        <!-- HISTORY SECTION -->
+        <section id="history" class="explore-content-container">
+            <h2>History in Japan</h2>
+
+            <!-- History content -->
+            <section class="explore-content">
+
+                <!-- first article -->
+                <article class="explore-image-container">
+                    <p class="content">Yamagata Prefecture is home to three scenic and culturally important mountains,
+                        Mt. Haguro, Mt. Gassan and Mt. Yudono, known collectively as the Dewa Sanzan. According to the
+                        Shugendo ascetic faith that developed here, the pilgrimage through these
+                        mountains is a journey through the present, past, and into the future.</p>
+                    <img src="images/explore/history-1.jpg" alt="Yamagata">
+                    <button class="read-btn" data-order="1">read</button>
+                </article>
+
+                <!-- second article -->
+                <article class="explore-image-container">
+                    <p class="content">Takayama is Japan's most famous thatched-roof village, and a convenient base for
+                        alpine adventure. Widely considered Gifu's crown jewel, the mountain-ringed city of Takayama is
+                        a fantastic destination in itself, but also an excellent base from which to explore the Japan
+                        Alps and the surrounding Hida area.</p>
+                    <img src="images/explore/history-2.jpg" alt="Takayama">
+                    <button class="read-btn" data-order="2">read</button>
+                </article>
+
+                <!-- third article -->
+                <article class="explore-image-container">
+                    <p class="content">
+                        The ancient burial mounds, archaeological sites, Japan's oldest temples and monuments dating
+                        back over 1,300 years mean a visit to Asuka is to tread in the footsteps of the rulers — many of
+                        them women — who helped shape the modern nation of Japan. And while Asuka is a living, breathing
+                        history book, it is also a picturesque slice of rural Japan ideal for a day of cycling and
+                        sightseeing.
+                    </p>
+                    <img src="images/explore/history-3.jpg" alt="Asuka">
+                    <button class="read-btn" data-order="3">read</button>
+                </article>
+            </section>
+        </section>
+
+        <!-- ART SECTION -->
+    </main>
+
+    <script src="scripts/explore.js"></script>
+</body>
+
+</html>
