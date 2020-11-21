@@ -164,6 +164,7 @@ main{
 .output-content h2{
     font-size: 5rem;
     margin-top: -2rem;
+    text-align: center;
 }
 
 .output-content h3{
