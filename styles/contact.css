@@ -5,12 +5,6 @@ body {
     overflow: hidden;
 }
 
-/* Navigation */
-
-.nav-items .active {
-    border-bottom: 1px solid #fff;
-}
-
 /* Main content */
 
 main{
