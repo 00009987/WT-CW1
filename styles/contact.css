@@ -1,0 +1,268 @@
+body {
+    background-color: #222831;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* Navigation */
+
+.nav-items .active {
+    border-bottom: 1px solid #fff;
+}
+
+/* Main content */
+
+main{
+    transition: display .4s ease-in;        
+}
+
+.contact-us-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.contact-us-label h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.contact-us-label p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .9px;
+    margin-top: -2rem;
+}
+
+/* Form */
+
+.form-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.form {
+    position: relative;
+    width: 40%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #222831;
+    padding-top: 25px;
+    font-size: 1.1rem;    
+}
+
+.form label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    pointer-events: none;
+}
+
+.form label::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: -1px;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in;
+}
+
+.content-label {
+    bottom: 5px;
+    left: 0;
+    position: absolute;
+    transition: all .3s ease-in;
+}
+
+.form input:focus+.input-label .content-label,
+.form input:valid+.input-label .content-label {
+    font-size: .9rem;
+    color: #5fa8d3;
+    transform: translateY(-150%);
+}
+
+.form input:focus+.input-label::after,
+.form input:valid+.input-label::after {
+    transform: translateX(0);
+}
+
+/* Submit button */
+
+.submit-btn-container {
+    width: 20%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: border .3s linear;
+    transition: color .3s linear;
+    transition: background-color .3s linear;    
+}
+
+.submit-btn:hover {
+    border: 1px solid #5fa8d3;
+    color: #222831;
+    background-color: #5fa8d3;
+}
+
+/* Output content */
+
+.submit-output{
+    width: 100%;
+    height: 100vh;   
+    position: relative; 
+    transform: translateY(100%);
+    transition: all .6s ease-in;    
+}
+
+.output-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.output-content h2{
+    font-size: 5rem;
+    margin-top: -2rem;
+}
+
+.output-content h3{
+    font-size: 3rem;    
+    margin-top: -3rem;
+    text-align: center;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 940px){    
+    .contact-us-label h2{
+        font-size: 2.5rem
+    }
+
+    .form{
+        width: 50%;
+    }
+
+    .submit-btn-container{
+        width: 30%;
+    }
+}
+
+@media (max-width : 810px){
+    .contact-us-label h2{
+        font-size: 1.8rem
+    }
+
+    .form{
+        width: 65%;
+    }
+
+    .submit-btn-container{
+        width: 45%;
+    }
+
+    .contact-us-label p{
+        font-size: 1.3rem;        
+    }
+
+    .output-content h2{
+        font-size: 4.5rem;        
+    }
+    
+    .output-content h3{
+        font-size: 2.5rem;        
+    }
+}
+
+@media (max-width: 600px){
+    .nav-items .nav-link{
+        font-size: 2rem;
+    }
+    
+    .contact-us-label h2{
+        font-size: 1.55rem;
+    }
+
+    .output-content h2{
+        margin-top: -5rem;
+    }
+
+    .output-content h3{
+        font-size: 2rem;    
+        margin-top: -7rem;
+    }
+}
+
+@media (max-width: 450px){
+    .nav-items .nav-link{
+        font-size: 1.8rem;
+    }
+    
+    .contact-us-label h2{
+        font-size: 1.8rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact-us-label p{
+        font-size: 1.1rem;                
+    }
+
+    .output-content h2{
+        font-size: 4rem;
+    }
+
+    .output-content h3{
+        font-size: 1.8rem;            
+    }    
+}
+
+@media (max-width: 415px){
+    .output-content h2{
+        margin-top: -8rem;           
+    }
+
+    .output-content h3{
+        margin-top: -13rem;           
+    }
+}

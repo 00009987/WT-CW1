@@ -1,0 +1,855 @@
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -20;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    animation: scale 25s;
+    z-index: -21;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* BANNER */
+
+.banner {
+    margin: 11rem auto 0 5.2rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-title {
+    font-size: 7rem;
+    margin-bottom: .7rem;
+    font-weight: 400;
+    line-height: 7rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: bannerStart 1s 0.5s forwards;
+}
+
+.banner p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 50%;
+    margin-bottom: 1.2rem;
+    line-height: 2.7rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: bannerStart 1s 0.7s forwards;
+}
+
+/* Designing Explore Button */
+
+.explore-btn {
+    width: 15.5rem;
+    height: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+    background-color: rgba(244, 67, 54, .7);
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: bannerStart 1s 0.9s forwards;
+    transition: background-color .3s ease-in;
+    transition: width .3s ease-in;
+}
+
+.explore-btn:hover {
+    background-color: rgba(244, 67, 54, .8);
+    width: 17rem;
+}
+
+@keyframes bannerStart {
+    0% {
+        transform: translateY(40rem) rotateY(-20deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* MAIN */
+
+/* BASIC: POPULAR PLACES AND ABOUT US STYLE*/
+
+main {
+    width: 100%;
+    color: #222831;
+}
+
+.popular-places {
+    padding: 3rem 0 .2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.popular-places h2,
+.about-us h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.underline {
+    width: 11.5rem;
+    height: .2rem;
+    background-color: #222831;
+    margin: 1.5rem auto;
+}
+
+/*POPULAR PLACES CONTENT */
+
+.place-article {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto 5.3rem;
+}
+
+.place-content {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.place-content h3 {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.place-content p {
+    width: 90%;
+    font-size: 1.26rem;
+    text-align: justify;
+}
+
+.place-content .content-para {
+    margin-left: 3.3rem;
+}
+
+.popular-place-img {
+    width: 50%;
+    height: 50vh;
+    border-radius: 2%;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform .5s ease-in;
+}
+
+.popular-place-img:hover {
+    transform: scale(1.15);
+    overflow: hidden;
+}
+
+/* ABOUT US */
+
+.about-us {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #222831;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    color: #fff;
+}
+
+.about-us .underline {
+    background-color: #fff;
+    width: 7rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    width: 80%;
+    margin: 3rem auto 0;
+}
+
+.about {
+    width: 100%;
+}
+
+.about p {
+    font-size: 1.3rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about .about-question {
+    font-size: 1.4rem;
+    margin: 1rem auto 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.about .explore-btn {
+    animation: unset;
+    opacity: 1;
+    outline: none;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #222831;
+}
+
+.social-media {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-media-icons a {
+    text-align: center;
+}
+
+.svg {
+    width: 20%;
+    transition: opacity .3s ease-in;
+}
+
+.svg:hover {
+    opacity: 0.6;
+}
+
+.copyright {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.copyright a,
+.copyright p {
+    color: #fff;
+    font-size: .9rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-bottom .3s ease-in;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1500px) {
+    /* Header */
+
+    .banner {
+        margin: 12rem auto 0 4.2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Popular places */
+    .place-article {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    /* Header */
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-title {
+        font-size: 6.2rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+        width: 55%;
+    }
+
+    .explore-btn {
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+    }
+
+    /* Popular places */
+    .place-content h3 {
+        font-size: 1.9rem;
+    }
+
+    .place-content p {
+        font-size: 1.19rem;
+    }
+
+
+    .popular-place-img {
+        height: 45vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.15);
+    }
+
+    /* About Us */
+    .about-us {
+        height: 100vh;
+    }
+
+    .about .about-question {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* Header */
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav {
+        width: 95%;
+    }
+
+    .nav-items {
+        justify-content: space-evenly;
+    }
+
+    .brand-name {
+        font-size: 2.1rem;
+    }
+
+    .banner-title {
+        font-size: 5.6rem;
+    }
+
+    .banner p {
+        font-size: 2rem;
+        width: 75%;
+    }
+
+    .explore-btn {
+        width: 14rem;
+        font-size: 1.5rem;
+    }
+
+    .explore-btn:hover {
+        width: 15.5rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 3.7rem;
+    }
+
+    .underline {
+        width: 18rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-article {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .place-content {
+        width: 100%;
+    }
+
+    .place-content h3 {
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .place-content p {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .order-change h3 {
+        order: 1;
+    }
+
+    .order-change p {
+        order: 2;
+    }
+
+    .order-change .popular-place-img {
+        order: 3;
+    }
+
+    .place-content .content-para {
+        margin-left: 0;
+    }
+
+    .popular-place-img {
+        margin-top: 2rem;
+        width: 80%;
+        height: 55vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.05);
+    }
+
+    /* About Us */
+
+    .about-us .underline {
+        background-color: #fff;
+        width: 9rem;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about .explore-btn {
+        width: 15rem;
+        font-size: 1.4rem;
+        transition: width .3s ease-in;
+    }
+
+    .about .explore-btn:hover {
+        width: 16.5rem;
+    }
+
+    .about .about-question {
+        font-size: 1.5rem;
+    }
+
+    /* Footer Content */
+
+    footer {
+        padding-top: 7rem;
+    }
+
+    .svg {
+        width: 22%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 810px) {
+
+    /* Header */
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }    
+
+    /* Banner */
+
+    .banner {
+        margin: 13rem auto 0 3.2rem;
+    }
+
+    .banner-title {
+        font-size: 4.6rem;
+        line-height: 5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .banner p {
+        font-size: 1.7rem;
+        width: 80%;
+        margin-bottom: 1.2rem;
+        line-height: 2.5rem;
+    }
+
+    /* Designing Explore Button */
+
+    .explore-btn {
+        width: 13rem;
+        height: 3.3rem;
+        font-size: 1.25rem;
+    }
+
+    .explore-btn:hover {
+        width: 14.4rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 2.8rem;
+    }
+
+    .underline {
+        width: 11rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .place-content p {
+        font-size: 1.3rem;
+    }
+
+    .popular-place-img {
+        width: 99%;
+        height: 50vh;
+    }
+
+    /* About us */
+
+    .about-us .underline {
+        width: 7rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .about .about-question {
+        font-size: 1.35rem;
+    }
+
+    .about .explore-btn {
+        width: 16rem;
+        height: 4rem;
+        font-size: 1.7rem;
+    }
+
+    .about .explore-btn:hover {
+        width: 17.5rem;
+    }
+
+    /* Footer Content */
+
+    .svg {
+        width: 30%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    /* Header */
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Banner */
+
+    .banner {
+        margin: 13.5rem auto 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-title {
+        text-align: center;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .banner p {
+        font-size: 1.4rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Designing Explore Button */
+
+    .explore-btn {
+        width: 12rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .explore-btn:hover {
+        width: 14rem;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 2.9rem;
+        font-weight: bold;
+    }
+
+    .underline {
+        width: 11rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-content h3 {
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
+
+    .place-content p {
+        font-size: 1.13rem;
+    }
+
+    .popular-place-img {
+        width: 89%;
+        height: 40vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.12);
+    }
+
+    /* About us */
+
+    .about-us .underline {
+        width: 6rem;
+    }
+
+    .about p {
+        font-size: 1.15rem;
+    }
+
+    .about .about-question {
+        font-size: 1.25rem;
+    }
+
+    .about .explore-btn {
+        width: 14.5rem;
+        height: 3.7rem;
+        font-size: 1.4rem;
+    }
+
+    .about .explore-btn:hover {
+        width: 15.5rem;
+    }
+
+    /* Footer Content */
+
+    footer {
+        padding-top: 11rem;
+    }
+
+    .svg {
+        width: 35%;
+    }
+
+    .copyright {
+        width: 90%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 410px) {
+
+    /* Header */
+    .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-items .nav-link {
+        font-size: 1.8rem;
+    }
+
+    /* Banner */
+
+    .banner {
+        margin: 11.5rem auto 0 .5rem;
+    }
+
+    .banner-title {
+
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    .banner p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    /* Popular places */
+
+    .popular-places h2,
+    .about-us h2 {
+        font-size: 2.4rem;
+    }
+
+    .underline {
+        width: 10rem;
+    }
+
+    /*POPULAR PLACES CONTENT */
+
+    .place-content h3 {
+        text-align: center;
+    }
+
+    .place-content p {
+        font-size: 1.05rem;
+    }
+
+    .popular-place-img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .popular-place-img:hover {
+        transform: scale(1.06);
+    }
+
+    /* About us */
+
+    .about-us .underline {
+        width: 5rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .about .about-question {
+        text-align: justify;
+    }
+
+    .about .explore-btn {
+        width: 14rem;
+        font-size: 1.3rem;
+    }
+
+    .about .explore-btn:hover {
+        width: 15rem;
+    }
+
+    /* Footer Content */
+
+    /* footer {   DELETE FROM GITHUB
+        padding-top: 6rem;
+    } */
+
+    .svg {
+        width: 45%;
+    }
+
+    .copyright {
+        width: 98%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .65rem;
+    }
+}
