@@ -44,6 +44,10 @@
     border-bottom: 1px solid #fff;
 }
 
+.nav-items .active {
+    border-bottom: 1px solid #fff;
+}
+
 /* Burger nav button */
 
 .burger-nav {
