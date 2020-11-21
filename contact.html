@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="nav">
+        <a class="brand-name" href="index.html">Voyager</a>
+        <ul class="nav-items">
+            <li class="nav-item"><a href="#" class="nav-link">Explore</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Things to do</a></li>
+            <li class="nav-item"><a href="#" class="nav-link nav-l">Plan Your Trip</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <section class="burger-nav">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </section>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <article class="contact-us-label">
+            <h2>Contact us by filling the form below</h2>
+        </article>
+
+        <form action="" class="form-container">
+            <!-- Name input -->
+            <section class="form">
+                <input type="text" name="name" id="" required autocomplete="off">
+                <label for="name" class="input-label">
+                    <span class="content-label">Full Name</span>
+                </label>
+            </section>
+
+            <!-- Email input  -->
+            <section class="form">
+                <input type="email" name="email" id="" required autocomplete="off">
+                <label for="email" class="input-label">
+                    <span class="content-label">Email</span>
+                </label>
+            </section>
+
+            <!-- Phone number input  -->
+            <section class="form">
+                <input type="text" name="phone" id="" required autocomplete="off">
+                <label for="phone" class="input-label">
+                    <span class="content-label">Phone Number</span>
+                </label>
+            </section>
+
+            <!-- Message input -->
+            <section class="form">
+                <input type="text" name="message" id="" required autocomplete="off">
+                <label for="message" class="input-label">
+                    <span class="content-label">Your Message</span>
+                </label>
+            </section>
+            
+            <!-- Submit Button -->
+            <section class="submit-btn-container">
+                <button  class="submit-btn">Submit</button>
+            </section>
+        </form>
+
+        <article class="contact-us-label">
+            <p>or calling on 77 888-66-44 </p>
+        </article>
+    </main>
+
+    <section class="submit-output">
+        <article class="output-content">
+            <h2>Thank you!</h2>
+            <h3>We will contact you soon.</h3>            
+        </article>
+    </section>
+
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/burger-nav.js"></script>
+</body>
+
+</html>
