@@ -47,13 +47,9 @@
             <h2> What do you want to explore?</h2>
 
             <section class="option-container">
-                <button class="option"><a href="#history">History</a></button>
-
-                <button class="option"><a href="#">Art</a></button>
-
-                <button class="option"><a href="#">Nature</a></button>
-
-                <button class="option"><a href="#">Culture</a></button>
+                <a href="#history"><button class="option">History</button></a>
+                <a href="#art"><button class="option">Art</button></a>
+                <a href="#nature"><button class="option">Nature</button></a>                
             </section>
         </section>
     </header>
@@ -62,11 +58,11 @@
     <main class="main-container">
 
         <!-- HISTORY SECTION -->
-        <section id="history" class="explore-content-container">
+        <section id="history" class="explore-content-container explore-off">
             <h2>History in Japan</h2>
 
             <!-- History content -->
-            <section class="explore-content">
+            <section class="explore-content ">
 
                 <!-- first article -->
                 <article class="explore-image-container">
@@ -104,8 +100,90 @@
         </section>
 
         <!-- ART SECTION -->
-    </main>
+        <section id="art" class="explore-content-container explore-off">
+            <h2>Art in Japan</h2>
 
+            <!-- Art content -->
+            <section class="explore-content">
+
+                <!-- first article -->
+                <article class="explore-image-container">
+                    <p class="content">A Multi-Sensory Digital Art Experience in Tokyo Bay—teamLab Borderless
+                        Digital art pioneers teamLab are a collective of engineers, UI designers, math phenoms, and
+                        artists. The interdisciplinary group has hosted extraordinary exhibitions around the world for
+                        several years.</p>
+                    <img src="images/explore/art-1.jpg" alt="Yamagata">
+                    <button class="read-btn" data-order="1">read</button>
+                </article>
+
+                <!-- second article -->
+                <article class="explore-image-container">
+                    <p class="content">Dolls built this town, and you can make them here yourself
+                        Iwatsuki is a small district of Saitama City that's nicknamed the "City of Dolls." Iwatsuki
+                        began making dolls in the 17th century, and the figures made here, from cute little girl dolls
+                        to fierce warriors, were used in festivals all over Japan.</p>
+                    <img src="images/explore/art-2.jpg" alt="Takayama">
+                    <button class="read-btn" data-order="2">read</button>
+                </article>
+
+                <!-- third article -->
+                <article class="explore-image-container">
+                    <p class="content">
+                        Iwami Kagura offers a unique take on a traditional performance art
+                        Fast, exciting, colorful and dynamic, Iwami Kagura is an unforgettable kind of masked
+                        dance-theater unlike anything you have seen before. The art has been thrilling local people for
+                        decades and is now regularly performed at the famous Gion Festival in Kyoto.
+                    </p>
+                    <img src="images/explore/art-3.jpg" alt="Asuka">
+                    <button class="read-btn" data-order="3">read</button>
+                </article>
+            </section>
+        </section>
+
+        <!-- NATURE SECTION -->
+        <section id="nature" class="explore-content-container explore-off">
+            <h2>Nature in Japan</h2>
+
+            <!-- Nature content -->
+            <section class="explore-content">
+
+                <!-- first article -->
+                <article class="explore-image-container">
+                    <p class="content">A castle in the mist with cherry blossoms and a ghost
+                        Maruoka Castle in Fukui Prefecture has the oldest existing wooden keep in the country.
+                        Kasumigajo, the alternative name for Maruoka Castle, means "castle in the mist," a reference to
+                        the area's misty weather. Kasumigajo Park was established around the base of the castle to
+                        commemorate its 400th anniversary.</p>
+                    <img src="images/explore/nature-1.jpg" alt="Yamagata">
+                    <button class="read-btn" data-order="1">read</button>
+                </article>
+
+                <!-- second article -->
+                <article class="explore-image-container">
+                    <p class="content">In a primeval forest steeped in spirituality, Japan's tallest waterfall roars to
+                        welcome you. From its source in an evergreen primeval forest and with an awe-inspiring 133 meter
+                        drop, Nachi Falls is Japan's largest vertical drop waterfall. Much more than a simple scene of
+                        natural beauty, the falls are worshipped as the home of a Shinto deity.</p>
+                    <img src="images/explore/nature-2.jpg" alt="Takayama">
+                    <button class="read-btn" data-order="2">read</button>
+                </article>
+
+                <!-- third article -->
+                <article class="explore-image-container">
+                    <p class="content">
+                        Where romance is destined to come true.
+                        A popular spot for couples, if you walk along Angel Road on Shodoshima while holding hands with
+                        your beloved, eternal love is said to be yours. Angel Road is named after a 500-meter sandbar
+                        which only appears twice a day during low tide. Once the sandbar appears it forms a golden path
+                        to a series of small islets.
+                    </p>
+                    <img src="images/explore/nature-3.jpg" alt="Asuka">
+                    <button class="read-btn" data-order="3">read</button>
+                </article>
+            </section>
+        </section>
+    </main>
+    <script src="scripts/burger-nav.js"></script>
     <script src="scripts/explore.js"></script>
 </body>
 
