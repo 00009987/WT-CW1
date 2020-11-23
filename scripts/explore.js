@@ -1,3 +1,30 @@
+/* SWITCHING BETWEEN CONTENTS USING OPTION BUTTONS*/
+
+//Selecting necessary elements
+const optionBtns = document.querySelectorAll('.option');
+const exploreContainers = document.querySelectorAll('.explore-content-container');
+
+optionBtns.forEach((optionbtn) =>{
+    optionbtn.addEventListener('click', (option) =>{        
+        let optionID = option.currentTarget.parentElement.getAttribute('href');
+
+        exploreContainers.forEach((container) =>{
+            let containerID = '#' + container.getAttribute('id');
+
+            if( optionID === containerID){
+                container.classList.add('explore-on')
+            }else{
+                container.classList.remove('explore-on');
+                container.classList.add('explore-off');
+            }
+        })
+    });
+});
+
+
+
+/* ANIMATING IMAGE WITH CONTENTS*/
+
 //creating array of object to keep track of containers
 const orders = [
     {
