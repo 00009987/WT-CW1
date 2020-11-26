@@ -62,6 +62,7 @@ body{
     line-height: 7rem;
     color: #fff;
     letter-spacing: 2px;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);        
 }
 
 .option-container{
