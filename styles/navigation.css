@@ -80,7 +80,7 @@
     transform: rotate(360deg);
 }
 
-@media (max-width: 830px) {
+@media (max-width: 855px) {
     body {
         overflow-x: hidden;
     }
