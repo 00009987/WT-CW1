@@ -52,13 +52,13 @@
     margin: 0 auto .7rem;
     line-height: 7rem;
     letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);        
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
 /* MAIN CONTENT */
 
-main{
+main {
     width: 100%;
     height: 100%;
     background-color: #222831;
@@ -66,8 +66,8 @@ main{
     font-family: 'Montserrat', sans-serif;
 }
 
-.tips-content-container{
-    width:70%;
+.tips-content-container {
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -77,65 +77,68 @@ main{
     align-items: center;
 }
 
-/* single tip contnainer */
+/* SINGLE TIP CONTAINER */
 
 /* tip title */
 
-.tips-content{
-    width: 100%;    
+.tips-content {
+    width: 100%;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color:#262f3d;
+    background-color: #262f3d;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
 }
 
-.tip-title{
+.tip-title {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     transition: all .3s ease;
 }
 
-.tip-title-border{
-    border-bottom: 1px solid #fff;   
+.tip-title-border {
+    border-bottom: 1px solid #fff;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
 
-.tip-title p{
+.tip-title p {
     font-size: 1.4rem;
+    line-height: 2.5rem;
     font-weight: 500;
     letter-spacing: .6px;
 }
 
-.tip-button{
+.tip-button {
     display: inline-block;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2rem;
+    height: 2rem;
     background-color: transparent;
-    border-color: hsl(209, 61%, 16%);
+    border-color: #102A42;
+
     cursor: pointer;
     outline: none;
 }
 
-.tip-button svg{
+.tip-button svg {
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    padding: .2rem;
     color: #fff;
 }
 
-.tip-button .off{
+.tip-button .off {
     display: none;
 }
 
-.down-icon{
+.down-icon {
     display: inline;
 }
 
 /* tip text */
 
-.tip-text{
+.tip-text {
     display: none;
     line-height: 1.8rem;
     font-size: 1.1rem;
@@ -143,6 +146,92 @@ main{
     transition: display .5s ease;
 }
 
-.tip-text-on{
+.tip-text-on {
     display: block;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1130px){
+    .banner-title{
+        width: 90%;
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 975px){
+    .banner-title{
+        width: 95%;
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 850px){
+    .banner-title{
+        width: 95%;
+        font-size: 3.9rem;
+    }
+}
+
+@media (max-width: 765px){
+    .banner{
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 670px){
+    .banner{
+        margin-top: 10.2rem;
+    }
+
+    .banner-title{
+        font-size: 3.4rem;
+        line-height: 5rem;
+    }
+
+    .tips-content-container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px){
+    .banner-title{
+        font-size: 3rem;        
+    }    
+}
+
+@media (max-width: 515px){
+    .banner{
+        margin-top: 15rem;
+    }
+    
+    .banner-title{
+        font-size: 2.7rem; 
+        line-height: 4rem;       
+        letter-spacing: 0;
+    }    
+
+    .tips-content-container{
+        width: 90%;
+    }
+
+    .tip-text{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px){
+    .banner-title{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 350px){
+    .banner{
+        margin-top: 13rem;
+    }
+
+    .banner-title{
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+    }
 }
