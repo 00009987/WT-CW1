@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     background-color: #222831;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -7,8 +8,21 @@ body {
 
 /* Main content */
 
-main{
-    transition: display .4s ease-in;        
+.header-contact {
+    width: 100%;
+    position: relative;
+    overflow: hidden;    
+    transition: all .3s ease-in;
+}
+
+main {
+    width: 100%;
+    
+    transition: all .4s ease;
+}
+
+.off {
+    display: none;
 }
 
 .contact-us-label {
@@ -23,7 +37,7 @@ main{
     letter-spacing: 1px;
 }
 
-.contact-us-label p{
+.contact-us-label p {
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: .9px;
@@ -56,7 +70,7 @@ main{
     color: #fff;
     background-color: #222831;
     padding-top: 25px;
-    font-size: 1.1rem;    
+    font-size: 1.1rem;
 }
 
 .form label {
@@ -124,7 +138,7 @@ main{
     text-transform: uppercase;
     transition: border .3s linear;
     transition: color .3s linear;
-    transition: background-color .3s linear;    
+    transition: background-color .3s linear;
 }
 
 .submit-btn:hover {
@@ -135,15 +149,19 @@ main{
 
 /* Output content */
 
-.submit-output{
+.submit-output {
     width: 100%;
-    height: 100vh;   
-    position: relative; 
+    height: 100vh;
+    position: relative;
     transform: translateY(100%);
-    transition: all .6s ease-in;    
+    transition: all .6s ease;
 }
 
-.output-content{
+.on {
+    transform: translateY(0);
+}
+
+.output-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -155,109 +173,121 @@ main{
     justify-content: space-evenly;
 }
 
-.output-content h2{
+.output-content h2 {
     font-size: 5rem;
     margin-top: -2rem;
     text-align: center;
 }
 
-.output-content h3{
-    font-size: 3rem;    
+.output-content h3 {
+    font-size: 3rem;
     margin-top: -3rem;
     text-align: center;
 }
 
 /* RESPONSIVENESS */
 
-@media (max-width: 940px){    
-    .contact-us-label h2{
+@media (max-width: 940px) {
+    .header-contact{
+        padding-bottom: 1rem;
+    }
+
+    .nav {
+        padding-bottom: 1rem;
+    }
+
+    .contact-us-label h2 {
         font-size: 2.5rem
     }
 
-    .form{
+    .form {
         width: 50%;
     }
 
-    .submit-btn-container{
+    .submit-btn-container {
         width: 30%;
     }
 }
 
-@media (max-width : 810px){
-    .contact-us-label h2{
+@media (max-width : 810px) {
+    .contact-us-label h2 {
         font-size: 1.8rem
     }
 
-    .form{
+    .form {
         width: 65%;
     }
 
-    .submit-btn-container{
+    .submit-btn-container {
         width: 45%;
     }
 
-    .contact-us-label p{
-        font-size: 1.3rem;        
+    .contact-us-label p {
+        font-size: 1.3rem;
     }
 
-    .output-content h2{
-        font-size: 4.5rem;        
+    .output-content h2 {
+        font-size: 4.5rem;
     }
-    
-    .output-content h3{
-        font-size: 2.5rem;        
+
+    .output-content h3 {
+        font-size: 2.5rem;
     }
 }
 
-@media (max-width: 600px){
-    .nav-items .nav-link{
+@media (max-width: 600px) {
+    .nav-items .nav-link {
         font-size: 2rem;
     }
-    
-    .contact-us-label h2{
+
+    .contact-us-label h2 {
         font-size: 1.55rem;
     }
 
-    .output-content h2{
+    .output-content h2 {
         margin-top: -5rem;
     }
 
-    .output-content h3{
-        font-size: 2rem;    
+    .output-content h3 {
+        font-size: 2rem;
         margin-top: -7rem;
     }
 }
 
-@media (max-width: 450px){
-    .nav-items .nav-link{
+@media (max-width: 450px) {
+    .nav-items .nav-link {
         font-size: 1.8rem;
     }
-    
-    .contact-us-label h2{
+
+    .contact-us-label h2 {
         font-size: 1.8rem;
         width: 80%;
         text-align: center;
     }
 
-    .contact-us-label p{
-        font-size: 1.1rem;                
+    .contact-us-label p {
+        font-size: 1.1rem;
     }
 
-    .output-content h2{
+    .output-content h2 {
         font-size: 4rem;
     }
 
-    .output-content h3{
-        font-size: 1.8rem;            
-    }    
+    .output-content h3 {
+        font-size: 1.8rem;
+    }
 }
 
-@media (max-width: 415px){
-    .output-content h2{
-        margin-top: -8rem;           
+@media (max-width: 415px) {
+    body {
+        overflow: hidden;
     }
 
-    .output-content h3{
-        margin-top: -13rem;           
+    .output-content h2 {
+        margin-top: -8rem;
+    }
+
+    .output-content h3 {
+        margin-top: -13rem;
     }
 }

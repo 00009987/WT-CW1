@@ -7,7 +7,7 @@ const form = document.querySelector('main');
 submitBtn.addEventListener('click', ()=>{
     
     //changing display property of main content so that the hidden text can show up
-    form.style.display = 'none';
+    form.classList.toggle('off');
     //showing output by changing transform property
-    output.style.transform = 'translateY(0%)';
+    output.classList.toggle('on');
 });

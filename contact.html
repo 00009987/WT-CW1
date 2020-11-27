@@ -19,23 +19,26 @@
 
 <body>
 
-    <!-- navigation bar -->
-    <nav class="nav">
-        <a class="brand-name" href="index.html">Voyager</a>
-        <ul class="nav-items">
-            <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Things to do</a></li>
-            <li class="nav-item"><a href="plan-your-trip.html" class="nav-link">Plan Your Trip</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">News</a></li>
-            <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
-        </ul>
+    <header class="header-contact">
 
-        <section class="burger-nav">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </section>
-    </nav>
+        <!-- navigation bar -->
+        <nav class="nav">
+            <a class="brand-name" href="index.html">Voyager</a>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Things to do</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Plan Your Trip</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <section class="burger-nav">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </section>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main>
@@ -43,44 +46,44 @@
             <h2>Contact us by filling the form below</h2>
         </article>
 
-        <form action="" class="form-container">
+        <section class="form-container">
             <!-- Name input -->
-            <section class="form">
+            <div class="form">
                 <input type="text" name="name" id="" required autocomplete="off">
                 <label for="name" class="input-label">
                     <span class="content-label">Full Name</span>
                 </label>
-            </section>
+            </div>
 
             <!-- Email input  -->
-            <section class="form">
-                <input type="email" name="email" id="" required autocomplete="off">
+            <div class="form">
+                <input type="text" name="email" id="" required autocomplete="off">
                 <label for="email" class="input-label">
                     <span class="content-label">Email</span>
                 </label>
-            </section>
+            </div>
 
             <!-- Phone number input  -->
-            <section class="form">
+            <div class="form">
                 <input type="text" name="phone" id="" required autocomplete="off">
                 <label for="phone" class="input-label">
                     <span class="content-label">Phone Number</span>
                 </label>
-            </section>
+            </div>
 
             <!-- Message input -->
-            <section class="form">
+            <div class="form">
                 <input type="text" name="message" id="" required autocomplete="off">
                 <label for="message" class="input-label">
                     <span class="content-label">Your Message</span>
                 </label>
-            </section>
-            
+            </div>
+
             <!-- Submit Button -->
-            <section class="submit-btn-container">
-                <button  class="submit-btn">Submit</button>
-            </section>
-        </form>
+            <div class="submit-btn-container">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </section>
 
         <article class="contact-us-label">
             <p>or calling on 77 888-66-44 </p>
@@ -90,7 +93,7 @@
     <section class="submit-output">
         <article class="output-content">
             <h2>Thank you!</h2>
-            <h3>We will contact you soon.</h3>            
+            <h3>We will contact you soon.</h3>
         </article>
     </section>
 

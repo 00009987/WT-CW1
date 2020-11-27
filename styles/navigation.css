@@ -23,7 +23,7 @@
 }
 
 .nav-item {
-    margin: 0 1rem;
+    margin: 0 1rem;    
 }
 
 .brand-name {
@@ -37,7 +37,7 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
     border-bottom: 1px solid transparent;
-    transition: border-bottom .4s ease-in;
+    transition: border-bottom .4s ease-in;    
 }
 
 .nav-link:hover {
@@ -90,6 +90,10 @@
     .nav {
         width: 88%;
         padding-top: 1.2rem;
+    }
+
+    .nav-item{
+        margin: 0 auto;
     }
 
     .nav-items {
