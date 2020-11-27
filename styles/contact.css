@@ -189,7 +189,7 @@ main {
 
 @media (max-width: 940px) {
     .header-contact{
-        padding-bottom: 1rem;
+        padding-bottom: .5rem;
     }
 
     .nav {

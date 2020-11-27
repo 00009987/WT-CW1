@@ -8,14 +8,8 @@ burgerNav.addEventListener('click', () => {
     //toggling nav by checking its place on X axis
     if (navigation.style.transform) {
         navigation.style.transform = '';
-
-        //this is only for contact page
-        document.querySelector('.header-contact').style.height = '10vh';
     } else {
         navigation.style.transform = 'translateX(0)';
-        
-        //this is only for contact page
-        document.querySelector('.header-contact').style.height = '100vh';
     }
 
     //animating links
