@@ -10,7 +10,7 @@ burgerNav.addEventListener('click', () => {
         navigation.style.transform = '';       
         
         //this is only for contact page
-        document.querySelector('.header-contact').style.height = '10vh';        
+        document.querySelector('.header-contact').style.height = '15vh';        
     } else {
         navigation.style.transform = 'translateX(0)';
         //this is only for contact page - else
