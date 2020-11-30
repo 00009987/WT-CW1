@@ -45,8 +45,7 @@ main {
 
 /* Form */
 
-.form-container {
-    height: 50vh;
+.form-container {    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,16 +257,24 @@ main {
         font-size: 1.8rem;
     }
 
+    .contact-us-label{
+        margin-top: 2rem;
+    }
+
     .contact-us-label h2 {
         font-size: 1.8rem;
         width: 80%;
         text-align: center;
     }
 
-    .contact-us-label p {
+    .contact-us-label p {      
+        margin-top: -.7rem;  
         font-size: 1.1rem;
     }
 
+    .form {
+        width: 75%;
+    }
     .output-content h2 {
         font-size: 4rem;
     }
