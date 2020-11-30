@@ -182,12 +182,13 @@ main {
 
 .about-us {
     width: 100%;
-    padding: 4rem 0;
+    padding: 5rem 0;
     background-color: #222831;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     position: relative;
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 .about-us h2 {
@@ -240,6 +241,7 @@ main {
 footer {
     width: 100%;
     margin: 0 auto;
+    padding-top: 4rem;
     background-color: #222831;
 }
 
@@ -293,50 +295,28 @@ footer {
 
 @media (max-width: 1500px) {
     /* Header */
-
     .banner {
         margin: 12rem auto 0 4.2rem;
     }
 }
 
 @media (max-width: 1300px) {
-
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }
-
     /* Popular places */
     .place-article {
         width: 90%;
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1130px) {
 
     /* Header */
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }
-
     .banner-title {
         font-size: 6.2rem;
     }
 
     .banner p {
         font-size: 1.5rem;
-        width: 55%;
+        width: 50%;
     }
 
     .explore-btn {
@@ -354,7 +334,6 @@ footer {
         font-size: 1.19rem;
     }
 
-
     .popular-place-img {
         height: 45vh;
     }
@@ -363,33 +342,15 @@ footer {
         transform: scale(1.15);
     }
 
-    /* About Us */
-    .about-us {
-        height: 100vh;
-    }
-
+    /* About Us */    
     .about .about-question {
         font-size: 1.2rem;
-    }
-
-    footer {
-        padding-top: 4rem;
     }
 }
 
 @media (max-width: 920px) {
 
     /* Header */
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }
-
     .nav {
         width: 95%;
     }
@@ -507,11 +468,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    /* Footer Content */
-
-    footer {
-        padding-top: 7rem;
-    }
+    /* Footer Content */    
 
     .svg {
         width: 22%;
@@ -524,18 +481,6 @@ footer {
 }
 
 @media (max-width: 810px) {
-
-    /* Header */
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }    
-
     /* Banner */
 
     .banner {
@@ -625,22 +570,10 @@ footer {
 }
 
 @media (max-width: 580px) {
-
-    /* Header */
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }
-
     /* Banner */
 
     .banner {
-        margin: 13.5rem auto 0 1rem;
+        margin: 11rem auto 0 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -650,7 +583,7 @@ footer {
     .banner-title {
         text-align: center;
         font-size: 5rem;
-        line-height: 5rem;
+        line-height: 5rem;        
     }
 
     .banner p {
@@ -689,6 +622,7 @@ footer {
     .place-content h3 {
         font-size: 1.6rem;
         letter-spacing: 0;
+        text-align: center;
     }
 
     .place-content p {
@@ -728,11 +662,7 @@ footer {
         width: 15.5rem;
     }
 
-    /* Footer Content */
-
-    footer {
-        padding-top: 11rem;
-    }
+    /* Footer Content */    
 
     .svg {
         width: 35%;
@@ -748,19 +678,7 @@ footer {
     }
 }
 
-@media (max-width: 410px) {
-
-    /* Header */
-    .img-wrapper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 100%;
-    }
-
+@media (max-width: 440px) {
     .nav-items .nav-link {
         font-size: 1.8rem;
     }
@@ -768,11 +686,10 @@ footer {
     /* Banner */
 
     .banner {
-        margin: 11.5rem auto 0 .5rem;
+        margin: 9rem auto 0 .5rem;
     }
 
     .banner-title {
-
         font-size: 4.5rem;
         line-height: 5rem;
     }
@@ -820,7 +737,7 @@ footer {
 
     .about p {
         font-size: 1.1rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .about .about-question {
@@ -849,5 +766,33 @@ footer {
     .copyright a,
     .copyright p {
         font-size: .65rem;
+    }
+}
+
+@media (max-width: 330px){
+    /* banner */
+
+    .banner{
+        margin-top: 6.5rem;
+    }
+
+    .banner-title{
+        font-size: 3.8rem
+    }
+
+    .banner p{
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .explore-btn{
+        font-size: 1.2rem;
+    }
+
+    /* place content */
+
+    .place-content p{
+        line-height: 1.5;
+        font-size: 1.1rem;
     }
 }
