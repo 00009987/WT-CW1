@@ -573,7 +573,7 @@ footer {
     /* Banner */
 
     .banner {
-        margin: 11rem auto 0 1rem;
+        margin: 9rem auto 0 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -773,7 +773,7 @@ footer {
     /* banner */
 
     .banner{
-        margin-top: 5rem;
+        margin-top: 6.5rem;
     }
 
     .banner-title{
