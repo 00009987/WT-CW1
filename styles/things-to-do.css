@@ -305,4 +305,8 @@ main {
     .banner-title{
         font-size: 2.4rem;
     }
+
+    .food img{
+        object-fit: inherit ;
+    }
 }
