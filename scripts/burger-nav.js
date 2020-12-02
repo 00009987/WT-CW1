@@ -2,14 +2,23 @@
 const burgerNav = document.querySelector('.burger-nav');
 const navigation = document.querySelector('.nav-items');
 const navigationLinks = document.querySelectorAll('.nav-items .nav-link');
+const headerContact = document.querySelector('.header-contact');
 
 //adding an eventlistener to burger-nav container
 burgerNav.addEventListener('click', () => {
     //toggling nav by checking its place on X axis
     if (navigation.style.transform) {
         navigation.style.transform = '';
+        
+        //this is only for contact and news page
+        if (typeof (headerContact) != 'undefined' && headerContact != null)
+            document.querySelector('.header-contact').style.height = '15vh';                
     } else {
         navigation.style.transform = 'translateX(0)';
+
+        //this is only for contact and news page
+        if (typeof (headerContact) != 'undefined' && headerContact != null)
+            document.querySelector('.header-contact').style.height = '100vh';        
     }
 
     //animating links
