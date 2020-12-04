@@ -23,7 +23,7 @@
 }
 
 .nav-item {
-    margin: 0 1rem;    
+    margin: 0 1rem;
 }
 
 .brand-name {
@@ -37,7 +37,7 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
     border-bottom: 1px solid transparent;
-    transition: border-bottom .4s ease-in;    
+    transition: border-bottom .4s ease-in;
 }
 
 .nav-link:hover {
@@ -92,7 +92,7 @@
         padding-top: 1.2rem;
     }
 
-    .nav-item{
+    .nav-item {
         margin: 0 auto;
     }
 
@@ -125,5 +125,116 @@
 
     .brand-name {
         font-size: 2.6rem;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    background-color: #222831;
+    border-top: 1px solid #fff;
+}
+
+.social-media {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-media-icons a {
+    text-align: center;
+}
+
+.svg {
+    width: 20%;
+    transition: opacity .3s ease-in;
+}
+
+.svg:hover {
+    opacity: 0.6;
+}
+
+.copyright {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.copyright a,
+.copyright p {
+    color: #fff;
+    font-size: .9rem;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-bottom .3s ease-in;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 920px) {
+    /* Footer Content */
+
+    .svg {
+        width: 22%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 810px) {
+    /* Footer Content */
+
+    .svg {
+        width: 30%;
+    }
+}
+
+@media (max-width: 580px) {
+    /* Footer Content */
+
+    .svg {
+        width: 35%;
+    }
+
+    .copyright {
+        width: 90%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 440px) {
+
+    /* Footer Content */
+
+    .svg {
+        width: 45%;
+    }
+
+    .copyright {
+        width: 98%;
+    }
+
+    .copyright a,
+    .copyright p {
+        font-size: .65rem;
     }
 }

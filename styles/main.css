@@ -188,7 +188,7 @@ main {
     text-align: center;
     position: relative;
     margin: 0 auto;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .about-us h2 {
@@ -228,6 +228,7 @@ main {
     margin: 1rem auto 1.6rem;
     font-weight: 700;
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 .about .explore-btn {
@@ -235,61 +236,6 @@ main {
     opacity: 1;
     outline: none;
 }
-
-/* FOOTER */
-
-footer {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 4rem;
-    background-color: #222831;
-}
-
-.social-media {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.social-media-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.social-media-icons a {
-    text-align: center;
-}
-
-.svg {
-    width: 20%;
-    transition: opacity .3s ease-in;
-}
-
-.svg:hover {
-    opacity: 0.6;
-}
-
-.copyright {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
-    text-align: center;
-}
-
-.copyright a,
-.copyright p {
-    color: #fff;
-    font-size: .9rem;
-    line-height: 2;
-    font-family: 'Montserrat', sans-serif;
-    transition: border-bottom .3s ease-in;
-}
-
-.copyright a:hover {
-    border-bottom: 1px solid #fff;
-}
-
 
 /* RESPONSIVENESS */
 
@@ -467,17 +413,6 @@ footer {
     .about .about-question {
         font-size: 1.5rem;
     }
-
-    /* Footer Content */    
-
-    .svg {
-        width: 22%;
-    }
-
-    .copyright a,
-    .copyright p {
-        font-size: .9rem;
-    }
 }
 
 @media (max-width: 810px) {
@@ -560,12 +495,6 @@ footer {
 
     .about .explore-btn:hover {
         width: 17.5rem;
-    }
-
-    /* Footer Content */
-
-    .svg {
-        width: 30%;
     }
 }
 
@@ -661,21 +590,6 @@ footer {
     .about .explore-btn:hover {
         width: 15.5rem;
     }
-
-    /* Footer Content */    
-
-    .svg {
-        width: 35%;
-    }
-
-    .copyright {
-        width: 90%;
-    }
-
-    .copyright a,
-    .copyright p {
-        font-size: .7rem;
-    }
 }
 
 @media (max-width: 440px) {
@@ -751,21 +665,6 @@ footer {
 
     .about .explore-btn:hover {
         width: 15rem;
-    }
-
-    /* Footer Content */
-
-    .svg {
-        width: 45%;
-    }
-
-    .copyright {
-        width: 98%;
-    }
-
-    .copyright a,
-    .copyright p {
-        font-size: .65rem;
     }
 }
 
