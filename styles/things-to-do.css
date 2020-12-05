@@ -76,14 +76,6 @@ main {
 .relaxation {
     width: 100%;
     margin: 4.5rem auto;
-    /* opacity: 0;
-    transform: translateY(20%);
-    transition: all .5s ease-in-out; */
-}
-
-.appear {
-    opacity: 1;
-    transform: translateY(0%);
 }
 
 .main-content-intro {

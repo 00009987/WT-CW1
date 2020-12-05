@@ -140,6 +140,14 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 4rem auto 5.3rem;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all .5s ease-in-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0%);
 }
 
 .place-content {
