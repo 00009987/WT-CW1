@@ -211,6 +211,18 @@ body{
     transition: display .5s ease;
 }
 
+
+/* Footer section */
+
+.footer-off{
+    display: none;
+}
+
+.footer-on{
+    display: block;
+}
+
+
 /* RESPONSIVENESS */
 
 @media (max-width: 1125px){    

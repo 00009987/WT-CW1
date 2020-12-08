@@ -1,3 +1,17 @@
+// ------------------- SCROLL BUTTON ANIMATION -------------------//
+// window.addEventListener('scroll', () => {
+//     const scrollBtn = document.querySelector('.scroll-btn');
+//     const scrollBtnPosition = scrollBtn.getBoundingClientRect().top;
+//     const screenHeight = window.innerHeight;
+//     console.log(scrollBtnPosition);
+//     console.log(screenHeight);
+//     if (screenHeight > scrollBtnPosition) {
+//         scrollBtn.classList.add('scroll-btn-active');
+//     }else{
+//         scrollBtn.classList.remove('scroll-btn-active');
+//     }
+// });
+
 // ------------------- BURGER NAVIGATION -------------------//
 
 // selecting necessary elements
@@ -38,6 +52,7 @@ burgerNav.addEventListener('click', () => {
     // animating burger-nav container by toggling 'change' class
     burgerNav.classList.toggle('change');
 });
+
 
 
 // ------------------- HOME PAGE ANIMATION -------------------//
@@ -92,7 +107,10 @@ if (document.title === 'Explore') {
 
                 // according to the logics below "on" and "off" classes will be added to containers
                 if (optionID === containerID) {
-                    container.classList.add('explore-on')
+                    container.classList.add('explore-on');
+                    
+                    // making footer section visible
+                    document.querySelector('.footer-off').classList.add('footer-on');
                 } else {
                     container.classList.remove('explore-on');
                     container.classList.add('explore-off');
