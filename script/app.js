@@ -1,17 +1,3 @@
-// ------------------- SCROLL BUTTON ANIMATION -------------------//
-// window.addEventListener('scroll', () => {
-//     const scrollBtn = document.querySelector('.scroll-btn');
-//     const scrollBtnPosition = scrollBtn.getBoundingClientRect().top;
-//     const screenHeight = window.innerHeight;
-//     console.log(scrollBtnPosition);
-//     console.log(screenHeight);
-//     if (screenHeight > scrollBtnPosition) {
-//         scrollBtn.classList.add('scroll-btn-active');
-//     }else{
-//         scrollBtn.classList.remove('scroll-btn-active');
-//     }
-// });
-
 // ------------------- BURGER NAVIGATION -------------------//
 
 // selecting necessary elements
@@ -108,7 +94,7 @@ if (document.title === 'Explore') {
                 // according to the logics below "on" and "off" classes will be added to containers
                 if (optionID === containerID) {
                     container.classList.add('explore-on');
-                    
+
                     // making footer section visible
                     document.querySelector('.footer-off').classList.add('footer-on');
                 } else {
@@ -126,7 +112,6 @@ if (document.title === 'Explore') {
 
     //Selecting necessary elements
     const btns = document.querySelectorAll('.read-btn');
-    const containers = document.querySelectorAll('.explore-image-container');
 
     //looping through each button
     btns.forEach((btn) => {
@@ -180,10 +165,33 @@ function outputAnimation() {
     //selecting necessary elements    
     const output = document.querySelector('.submit-output');
     const form = document.querySelector('main');
-    //changing display property of main content so that the hidden text can show up
-    form.classList.toggle('off');
-    //showing output by changing transform property
-    output.classList.toggle('on');
+    const inputs = document.querySelectorAll('input');
+    const bottomBorders = document.querySelectorAll('.form label');
+
+    //to keep track if there's an empty input
+    let inputValid = false;
+    //iterating through each input
+    inputs.forEach((input) => {
+        if (input.value != '') {
+            inputValid = true; // meaning every input is filled
+        } else {            
+            //showing an error
+            bottomBorders.forEach((bottomBorder) =>{
+                // comparing data attribute of each element
+                if(bottomBorder.dataset.id === input.dataset.id){ 
+                    bottomBorder.style.borderBottom = '2px solid red';
+                }                
+            });
+            inputValid = false;
+        }
+    })
+    //if no error, then output message will be shown
+    if (inputValid) {
+        //changing display property of main content so that the hidden text can show up
+        form.classList.toggle('off');
+        //showing output by changing transform property
+        output.classList.toggle('on');
+    }
 }
 
 if (document.title === "Contact") {
